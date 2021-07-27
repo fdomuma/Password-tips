@@ -43,6 +43,17 @@ structureKey.grid(column=0, row=1)
 placeKey.grid(column=0, row=2)
 keywordKey.grid(column=0, row=3)
 
+# Features
 
+newButton = Button(root, text="Create password", bg="green", padx=8, pady=8)
+editButton = Button(root, text="Edit", padx=8, pady=8, width=12)
+deleteButton = Button(root, text="Delete", bg="red", padx=8, pady=8, width=12)
+
+freeRow = Label(root, text="")
+freeRow.grid(column=0, row=4, columnspan=3)
+
+newButton.grid(column=0, row=5)
+editButton.grid(column=1, row=5)
+deleteButton.grid(column=2, row=5)
 
 root.mainloop()
